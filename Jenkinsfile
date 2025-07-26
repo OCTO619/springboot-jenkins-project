@@ -7,12 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-            steps {
-                // Get the code from your GitHub repository
-                git 'https://github.com/OCT0619/springboot-jenkins-project.git'
-            }
-        }
         stage('Build Project') {
             steps {
                 // Run the Maven command to build the project
